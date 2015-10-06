@@ -1,3 +1,5 @@
+var hourOperation = ['10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm'];
+
 var pikePlace = {
 	location: 'Pike Place Market',
 	minCustHour: 17,
@@ -13,8 +15,6 @@ var pikePlace = {
 	}
 	
 }
-
-var hourOperation = ['10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm'];
 
 for(var i = 0; i < hourOperation.length; i++) {
   	var text = document.createTextNode(hourOperation[i] + " : Bake " + pikePlace.totalCookieHour() + " Cookies");
@@ -41,8 +41,6 @@ var seaTac = {
 	
 }
 
-var hourOperation = ['10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm'];
-
 for(var i = 0; i < hourOperation.length; i++) {
   	var text = document.createTextNode(hourOperation[i] + " : Bake " + seaTac.totalCookieHour() + " Cookies");
   	var list = document.getElementById('seaTac');
@@ -68,8 +66,6 @@ var southCenter = {
 	
 }
 
-var hourOperation = ['10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm'];
-
 for(var i = 0; i < hourOperation.length; i++) {
   	var text = document.createTextNode(hourOperation[i] + " : Bake " + southCenter.totalCookieHour() + " Cookies");
   	var list = document.getElementById('southCenter');
@@ -94,8 +90,6 @@ var bellSQ = {
 	}
 }
 
-var hourOperation = ['10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm'];
-
 for(var i = 0; i < hourOperation.length; i++) {
   	var text = document.createTextNode(hourOperation[i] + " : Bake " + bellSQ.totalCookieHour() + " Cookies");
   	var list = document.getElementById('bellSQ');
@@ -119,8 +113,6 @@ var alki = {
 	}
 	
 }
-
-var hourOperation = ['10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm'];
 
 for(var i = 0; i < hourOperation.length; i++) {
   	var text = document.createTextNode(hourOperation[i] + " : Bake " + alki.totalCookieHour() + " Cookies");
