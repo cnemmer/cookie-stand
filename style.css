@@ -4,15 +4,19 @@
 
 #Company-Name {
 	font-family: 'Indie Flower', cursive;
+	font-style: oblique;
 	font-weight: bold;
-	font-size:90px;
+	text-decoration: underline;
+	font-size:130px;
 	color: #381D2A;
 	text-align: center;
+	text-shadow: -9px -3px black;
 }
 
 .location {
 	color: #381D2A;
 	font-family: Helvetica;
+	text-decoration: underline;
 	font-weight: bold;
 	font-size: 55px;
 }

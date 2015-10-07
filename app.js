@@ -32,12 +32,7 @@ var CookieStand = function(placeName, minCustHour, maxCustHour, avgCookiesCust, 
 	  	list.appendChild(item);
 	 };
 
-	 this.dayTotal = function() {
-	 	return this.totalCookieHour + hourOperation.length;
-	 }
-
-   this.counter(this.id);
-   this.dayTotal();
+	    this.counter(this.id);
 }
 
 var pikePlace = new CookieStand('Pike Place Market', 17, 88, 5.2, 'pike');
