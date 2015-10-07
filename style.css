@@ -1,0 +1,32 @@
+* {
+	background-color: #6B9099;
+}
+
+#Company-Name {
+	font-family: 'Indie Flower', cursive;
+	font-weight: bold;
+	font-size:90px;
+	color: #381D2A;
+	text-align: center;
+}
+
+.location {
+	color: #381D2A;
+	font-family: Helvetica;
+	font-weight: bold;
+	font-size: 55px;
+}
+
+#pike, #seaTac, #southCenter, #bellSQ, #alki {
+	color: #444444;
+	font-family: Verdana;
+	font-weight: bold;
+	font-size: 25px;
+}
+
+#footer {
+	color: #381D2A;
+	font-family: Helvetica;
+	font-weight: bold;
+	font-size: 25px;
+}
