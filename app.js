@@ -1,143 +1,51 @@
 var hourOperation = ['10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm'];
 
-var pikePlace = {
-	location: 'Pike Place Market',
-	minCustHour: 17,
-	maxCustHour: 88,
-	avgCookiesCust: 5.2,
-	
-	randCustHour: function() {
+var CookieStand = function(placeName, minCustHour, maxCustHour, avgCookiesCust, id)  {
+	this.placeName = placeName;
+	this.minCustHour = minCustHour;
+	this.maxCustHour = maxCustHour;
+	this.avgCookiesCust = avgCookiesCust;
+	this.id = id;
+
+	this.randCustHour = function() {
 		return Math.floor(Math.random() * (this.maxCustHour - this.minCustHour +1)) + this.minCustHour;
-	},
+	};
 	
-	totalCookieHour: function() {
+	this.totalCookieHour = function() {
 		return Math.floor(this.randCustHour() * this.avgCookiesCust);
-	}
-	
+	};
+  
+  this.counter = function(id) {	
+  	var counter = 0;
+		for(var i = 0; i < hourOperation.length; i++) {
+			var bake = this.totalCookieHour();
+			counter += bake; 
+	  	var list = document.getElementById(id);
+	  	var item = document.createElement("li");
+	  	var text = document.createTextNode(hourOperation[i] + " : Bake " + bake + " Cookies");
+	  	item.appendChild(text);
+	  	list.appendChild(item);
+	  }
+	  	var item = document.createElement("li");
+	  	var text = document.createTextNode("Total " + counter + " Cookies");
+	  	item.appendChild(text);
+	  	list.appendChild(item);
+	 };
+
+	    this.counter(this.id);
 }
 
-for(var i = 0; i < hourOperation.length; i++) {
-  	var text = document.createTextNode(hourOperation[i] + " : Bake " + pikePlace.totalCookieHour() + " Cookies");
-  	var list = document.getElementById('pike');
-  	var item = document.createElement("li");
-  	item.appendChild(text);
-  	list.appendChild(item);
-  }
+var pikePlace = new CookieStand('Pike Place Market', 17, 88, 5.2, 'pike');
+var seaTac = new CookieStand('SeaTac Airport', 6, 44, 1.2, 'seaTac');
+var southcenter = new CookieStand('Southcenter Mall', 11, 38, 1.9, 'southCenter');
+var bellevueSquare = new CookieStand('Bellevue Square', 20, 48, 3.3, 'bellSQ');
+var alki = new CookieStand('Alki Beach', 3, 24, 2.6, 'alki');
 
-
-var seaTac = {
-	location: 'SeaTac Airport',
-	minCustHour: 6,
-	maxCustHour: 44,
-	avgCookiesCust: 1.2,
-	
-	randCustHour: function() {
-		return Math.floor(Math.random() * (this.maxCustHour - this.minCustHour +1)) + this.minCustHour;
-	},
-	
-	totalCookieHour: function() {
-		return Math.floor(this.randCustHour() * this.avgCookiesCust);
-	}
-	
-}
-
-for(var i = 0; i < hourOperation.length; i++) {
-  	var text = document.createTextNode(hourOperation[i] + " : Bake " + seaTac.totalCookieHour() + " Cookies");
-  	var list = document.getElementById('seaTac');
-  	var item = document.createElement("li");
-  	item.appendChild(text);
-  	list.appendChild(item);
-  }
-
-
-var southCenter = {
-	location: 'Southcenter Mall',
-	minCustHour: 11,
-	maxCustHour: 38,
-	avgCookiesCust: 1.9,
-	
-	randCustHour: function() {
-		return Math.floor(Math.random() * (this.maxCustHour - this.minCustHour +1)) + this.minCustHour;
-	},
-	
-	totalCookieHour: function() {
-		return Math.floor(this.randCustHour() * this.avgCookiesCust);
-	}
-	
-}
-
-for(var i = 0; i < hourOperation.length; i++) {
-  	var text = document.createTextNode(hourOperation[i] + " : Bake " + southCenter.totalCookieHour() + " Cookies");
-  	var list = document.getElementById('southCenter');
-  	var item = document.createElement("li");
-  	item.appendChild(text);
-  	list.appendChild(item);
-  }
-
-
-var bellSQ = {
-	location: 'Bellevue Square',
-	minCustHour: 20,
-	maxCustHour: 48,
-	avgCookiesCust: 3.3,
-	
-	randCustHour: function() {
-		return Math.floor(Math.random() * (this.maxCustHour - this.minCustHour +1)) + this.minCustHour;
-	},
-	
-	totalCookieHour: function() {
-		return Math.floor(this.randCustHour() * this.avgCookiesCust);
-	}
-}
-
-for(var i = 0; i < hourOperation.length; i++) {
-  	var text = document.createTextNode(hourOperation[i] + " : Bake " + bellSQ.totalCookieHour() + " Cookies");
-  	var list = document.getElementById('bellSQ');
-  	var item = document.createElement("li");
-  	item.appendChild(text);
-  	list.appendChild(item);
-}
-
-var alki = {
-	location: 'Alki Beach',
-	minCustHour: 3,
-	maxCustHour: 24,
-	avgCookiesCust: 2.6,
-	
-	randCustHour: function() {
-		return Math.floor(Math.random() * (this.maxCustHour - this.minCustHour +1)) + this.minCustHour;
-	},
-	
-	totalCookieHour: function() {
-		return Math.floor(this.randCustHour() * this.avgCookiesCust);
-	}
-	
-}
-
-for(var i = 0; i < hourOperation.length; i++) {
-  	var text = document.createTextNode(hourOperation[i] + " : Bake " + alki.totalCookieHour() + " Cookies");
-  	var list = document.getElementById('alki');
-  	var item = document.createElement("li");
-  	item.appendChild(text);
-  	list.appendChild(item);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+console.log(pikePlace);
+console.log(seaTac);
+console.log(southcenter);
+console.log(bellevueSquare);
+console.log(alki);
 
 
 

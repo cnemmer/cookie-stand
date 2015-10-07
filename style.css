@@ -1,0 +1,36 @@
+* {
+	background-color: #6B9099;
+}
+
+#Company-Name {
+	font-family: 'Indie Flower', cursive;
+	font-style: oblique;
+	font-weight: bold;
+	text-decoration: underline;
+	font-size:130px;
+	color: #381D2A;
+	text-align: center;
+	text-shadow: -9px -3px black;
+}
+
+.location {
+	color: #381D2A;
+	font-family: Helvetica;
+	text-decoration: underline;
+	font-weight: bold;
+	font-size: 55px;
+}
+
+#pike, #seaTac, #southCenter, #bellSQ, #alki {
+	color: #444444;
+	font-family: Verdana;
+	font-weight: bold;
+	font-size: 25px;
+}
+
+#footer {
+	color: #381D2A;
+	font-family: Helvetica;
+	font-weight: bold;
+	font-size: 25px;
+}
