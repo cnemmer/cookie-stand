@@ -1,0 +1,65 @@
+body {
+	background-color: #6B9099;
+}
+
+header {
+	height: 50%;
+	background-color: #444444;
+}
+
+#logo {
+	text-align: center;
+}
+
+.logo {
+	text-align: center;
+	font-weight: bolder;
+	font-family: 'Indie Flower', cursive;
+	font-size: 50px;
+}
+
+main {
+  display: inline-block;
+}
+
+#main1{
+	width:60%;
+	background-color: #63A080;
+}
+
+#history { 
+	width: 100%;
+}
+
+#history img {
+	width: 100%;
+}
+
+#main2 {
+	width:39.5%;
+}
+
+.pics img {  
+	width: 55%;
+	margin-left: 21%
+}
+
+h1 {
+	text-align: center;
+	font-family: Helvetica;
+	font-weight: bold;
+}
+
+#contents  {
+	height: 1000px;
+}
+
+li {
+	text-align: center;
+	font-family: Helvetica;
+	background-color: #63A080;
+}
+
+#contents img {
+	margin-left: 46%
+}
