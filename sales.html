@@ -5,25 +5,55 @@
 	<link href='https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Indie+Flower' rel='stylesheet' type='text/css'>
 </head>
 <body>
-	
+
 	<H1 id= "Company-Name">Pat's Salmon Cookie</h1>
 		<img src='img/salmon.png'< width= '800' align:"right"/>
 
-	<p class="location">Pike Place Market</p>	
+	<p class="location">Pike Place Market</p>
 	 <ul id="pike"></ul>
 
 	<p class="location">SeaTac Airport</p>
-	 <ul id="seaTac"></ul> 
+	 <ul id="seaTac"></ul>
 
 	<p class="location">Southcenter Mall</p>
 	 <ul id="southCenter"></ul>
 
 	<p class="location">Bellevue Square</p>
-	  <ul id="bellSQ"></ul>  
+	  <ul id="bellSQ"></ul>
 
 	<p class="location">Alki Beach</p>
-	  <ul id="alki"></ul>  
-	
+	  <ul id="alki"></ul>
+
+	<form>
+		<fieldset>
+			<legend>
+				New Location Form:
+			</legend>
+			<label>
+				Location:
+				<input type="text" name="location">
+			</label>
+			<br/>
+			<label>
+				Minimum Customers Per Hour:
+				<input type="text" name="minCust">
+			</label>
+			<br/>
+			<label>
+				Maximum Customers Per Hour:
+				<input type="text" name="maxCust">
+			</label>
+			<br/>
+			<label>
+				Average Cookies Per Customer:
+				<input type="text" name="avgCookies">
+			</label>
+			<br/>
+			<br/>
+			<input type="submit" name="submit" value="Submit">
+		</fieldset>
+	</form>
+
 	<footer id="footer"><a href="style-guide.html">Pat's Style Guide</a></footer>
 
   <script src="app.js"></script>
