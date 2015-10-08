@@ -13,11 +13,49 @@ header {
 
 .logo {
 	text-align: center;
-	font-weight: bold;
+	font-weight: bolder;
 	font-family: 'Indie Flower', cursive;
 	font-size: 50px;
 }
 
-#section {
+main {
+  display: inline-block;
+}
+
+#main1{
+	width:60%;
+	background-color: #63A080;
+}
+
+#history { 
+	width: 100%;
+}
+
+#history img {
+	width: 100%;
+}
+
+#main2 {
+	width:39%;
+}
+
+.pics img {  
 	width: 60%;
+	margin-left: 21%
+}
+
+h1 {
+	text-align: center;
+	font-family: Helvetica;
+	font-weight: bold;
+}
+
+#contents  {
+	height: 1000px;
+}
+
+li {
+	text-align: center;
+	font-family: Helvetica;
+	background-color: #63A080;
 }
