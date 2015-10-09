@@ -19,7 +19,7 @@ var CookieStand = function(placeName, minCustHour, maxCustHour, avgCookiesCust) 
 		return Math.floor(this.randCustHour() * this.avgCookiesCust);
 		this.totalCookieHour.push(this.hourCookiePer);
 	};
-  
+  }
 
 
   this.hoursOp =function() {
@@ -27,22 +27,23 @@ var CookieStand = function(placeName, minCustHour, maxCustHour, avgCookiesCust) 
   	for(var i =0; i < hourOperation.length; i++) {
   	  var th = document.createElement('th');
   	  th.textContent = hourOperation[i];
-  	  table.appendChild(th) 
+  	  table.appendChild(th);
   	}
-  };
+  }
 
 	this.store = function()	{	
- 		for(var i = 0; i < locat.length; i++)  {
- 		var tr = document.createElement('tr');
- 		tr.textContent = this.totalCookieHour();
- 		table.appendChild(tr);
-	 }
-	};
+		var table = document.getElementById('cookieSales');
+		for(var i = 0; i < locat.length; i++)  {
+		var tr = document.createElement('tr');
+		tr.textContent = locat[i];
+		table.appendChild(tr);
+}
+};
 		
 
 
+ this.hoursOp();	
  this.store();	
- this.hourOP();	
 
 
 
@@ -51,6 +52,7 @@ var seaTac = new CookieStand('SeaTac Airport', 6, 44, 1.2); //, 'bake', 'total')
 var southcenter = new CookieStand('Southcenter Mall', 11, 38, 1.9); //, 'bake', 'total');
 var bellevueSquare = new CookieStand('Bellevue Square', 20, 48, 3.3); //, 'bake', 'total');
 var alki = new CookieStand('Alki Beach', 3, 24, 2.6); //, 'bake', 'total');	
+
 
 
 
